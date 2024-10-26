@@ -105,11 +105,9 @@ const Home = () => {
                 <dialog id="my_modal_4" className="modal">
                   <div className="modal-box w-11/12 max-w-5xl h-auto">
                     <div className="flex justify-end">
-                      <form method="dialog">
                         <button className="py-3">
                           <IoClose size={30} />
                         </button>
-                      </form>
                     </div>
                     <div className="h-[350px] w-full">
                       <img
