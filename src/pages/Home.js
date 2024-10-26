@@ -128,7 +128,7 @@ const Home = () => {
                         className="rounded-lg h-[350px] w-full object-cover bg-cover"
                       />
                     </div>
-                    <div data-aos="zoom-in" className="text-white py-5 gap-3 flex flex-col">
+                    <div className="text-white py-5 gap-3 flex flex-col">
                       <p className="font-bold text-xl md:text-3xl">
                         Happy Birthday Cintaku, Cahyaning Eka Putri
                       </p>
