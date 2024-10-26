@@ -171,7 +171,7 @@ const Home = () => {
           <div className="px-4 md:px-16 flex flex-col gap-4 pb-10">
             <div className="flex justify-between items-center">
               <p className="text-white text-md">
-                More To Explore: Chayaning Eka Putri
+                More To Explore: Cahyaning Eka Putri
               </p>
               <div className="mt-4">
                 <button
