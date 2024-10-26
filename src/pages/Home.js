@@ -120,7 +120,7 @@ const Home = () => {
                     </div>
                     <div className="text-white py-5 gap-3 flex flex-col">
                       <p className="font-bold text-xl md:text-3xl">
-                        Happy Birthday Cintaku, Cahyaning Eka Purti
+                        Happy Birthday Cintaku, Cahyaning Eka Putri
                       </p>
                       <p>Hai sayang...</p>
                       <p className="opacity-80">
