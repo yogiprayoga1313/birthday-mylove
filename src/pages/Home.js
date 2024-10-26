@@ -99,8 +99,8 @@ const Home = () => {
                 kenangan indah bersama.
               </p>
             </div>
-            <div data-aos="fade-up" className="flex flex-col md:flex-row gap-2">
-              <div
+            <div className="flex flex-col md:flex-row gap-2">
+              <div data-aos="fade-up"
                 onClick={() =>
                   document.getElementById("my_modal_4").showModal()
                 }
@@ -153,7 +153,7 @@ const Home = () => {
                   </div>
                 </dialog>
               </div>
-              <div
+              <div data-aos="fade-up"
                 onClick={() => setShowMoreInfo(true)} // Set state to show more info
                 className="bg-white bg-opacity-30 cursor-pointer text-white font-semibold px-3 py-2 rounded-lg w-full md:w-56 gap-3 flex justify-center items-center"
               >
