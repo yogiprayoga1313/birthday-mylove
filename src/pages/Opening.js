@@ -4,6 +4,9 @@ import LogoNetflix from "../assets/logo-netflix/NetflixLogo.png";
 import backgroundImg from "../assets/images-mylove/sayang-1.png";
 import musicFile from "../assets/sound/girl in red - we fell in love in october.mp3"; // Make sure to import your music file
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
+
 const Opening = () => {
   const audioRef = useRef(new Audio(musicFile)); // Create a ref for the audio element
 
@@ -16,6 +19,13 @@ const Opening = () => {
     audioRef.current.play(); // Play the audio
     // You can add a delay here if needed to ensure the music plays before navigating
   };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
 
   return (
     <>
@@ -39,7 +49,7 @@ const Opening = () => {
             </Link>
           </div>
 
-          <div className="flex flex-col gap-10 justify-center items-center md:pt-72 pt-48 w-full p-5">
+          <div data-aos="fade-up" className="flex flex-col gap-10 justify-center items-center md:pt-72 pt-48 w-full p-5">
             <div className="text-center text-white flex flex-col gap-2">
               <p className="text-5xl font-bold">
                 Unlimited Romance, Love, and more.

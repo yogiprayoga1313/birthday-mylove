@@ -8,6 +8,9 @@ import { IoMdInformationCircleOutline } from "react-icons/io";
 import { FaPlay } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
+
 // Import images directly
 import img1 from "../assets/images-mylove/WhatsApp Image 2024-10-26 at 9.29.33 AM (2).jpeg"; // Replace with your actual image paths
 import img2 from "../assets/images-mylove/WhatsApp Image 2024-10-26 at 9.29.22 AM (1).jpeg";
@@ -30,6 +33,13 @@ const Home = () => {
     }, 2000); // Change image every 2 seconds
 
     return () => clearInterval(interval); // Cleanup on component unmount
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Whether animation should happen only once
+    });
   }, []);
 
   return (
@@ -78,10 +88,10 @@ const Home = () => {
         {/* upcapan */}
         {!showMoreInfo && ( // Conditionally render upcapan based on state
           <div className="flex flex-col gap-5 px-4 md:px-16 pt-24 md:pt-72">
-            <div className="text-3xl md:text-4xl w-full md:w-[600px] text-white font-bold">
+            <div data-aos="fade-up" className="text-3xl md:text-4xl w-full md:w-[600px] text-white font-bold">
               <p>Happy Birthday to MyLove</p>
             </div>
-            <div className="text-white opacity-70 w-full md:w-[600px]">
+            <div data-aos="fade-up" className="text-white opacity-70 w-full md:w-[600px]">
               <p>
                 Selamat ulang tahun, cintaku! Di hari spesial ini, aku hanya
                 ingin kau tahu betapa berartinya dirimu bagiku. Semoga semua
@@ -89,7 +99,7 @@ const Home = () => {
                 kenangan indah bersama.
               </p>
             </div>
-            <div className="flex flex-col md:flex-row gap-2">
+            <div data-aos="fade-up" className="flex flex-col md:flex-row gap-2">
               <div
                 onClick={() =>
                   document.getElementById("my_modal_4").showModal()
@@ -118,7 +128,7 @@ const Home = () => {
                         className="rounded-lg h-[350px] w-full object-cover bg-cover"
                       />
                     </div>
-                    <div className="text-white py-5 gap-3 flex flex-col">
+                    <div data-aos="zoom-in" className="text-white py-5 gap-3 flex flex-col">
                       <p className="font-bold text-xl md:text-3xl">
                         Happy Birthday Cintaku, Cahyaning Eka Putri
                       </p>
@@ -175,40 +185,40 @@ const Home = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
               {" "}
               {/* Use grid for layout */}
-              <img
+              <img data-aos="fade-up"
                 src={backgroundImg}
                 alt="img-1"
                 className="rounded-lg h-auto"
               />
-              <img src={img1} alt="img-2" className="rounded-lg h-auto" />
-              <img src={img2} alt="img-3" className="rounded-lg h-auto" />
-              <img src={img3} alt="img-4" className="rounded-lg h-auto" />
-              <img
+              <img data-aos="fade-up" src={img1} alt="img-2" className="rounded-lg h-auto" />
+              <img data-aos="fade-up" src={img2} alt="img-3" className="rounded-lg h-auto" />
+              <img data-aos="fade-up" src={img3} alt="img-4" className="rounded-lg h-auto" />
+              <img data-aos="fade-up"
                 src={img4}
                 alt="img-5"
                 className="rounded-lg h-auto"
               />
-              <img
+              <img data-aos="fade-up"
                 src={img5}
                 alt="img-6"
                 className="rounded-lg h-auto"
               />
-              <img
+              <img data-aos="fade-up"
                 src={img6}
                 alt="img-7"
                 className="rounded-lg h-auto"
               />
-              <img
+              <img data-aos="fade-up"
                 src={img7}
                 alt="img-8"
                 className="rounded-lg h-auto"
               />
-              <img
+              <img data-aos="fade-up"
                 src={img8}
                 alt="img-9"
                 className="rounded-lg h-auto"
               />
-              <img
+              <img data-aos="fade-up"
                 src={img9}
                 alt="img-10"
                 className="rounded-lg h-auto"
