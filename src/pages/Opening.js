@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import LogoNetflix from "../assets/logo-netflix/NetflixLogo.png";
 import backgroundImg from "../assets/images-mylove/sayang-1.png";
-import musicFile from "../assets/sound/girl in red - we fell in love in october.mp3"; // Make sure to import your music file
+import musicFile from "../assets/sound/The 1975 - About You (Official).mp3"; // Make sure to import your music file
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
